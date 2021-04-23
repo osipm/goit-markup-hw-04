@@ -11,6 +11,7 @@
     --gray-bg: #F5F4FA;
     --bg: #E5E5E5;
     --border: #EEEEEE;
+    --icon-svg-cl: #AFB1B8;
 }
 
 html,
@@ -264,6 +265,42 @@ img {
 .text-team-card {
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 16px;
+}
+
+.socials-icon{
+    display: inline-flex;
+
+}
+
+.socials-icon-item:not(:last-child){
+    margin-right: 10px;    
+}
+
+.socials-icon-svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-svg-cl);
+}
+
+.social-icon-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color:var(--main-title-cl);
+}
+
+.social-icon-link:hover .socials-icon-svg,
+.social-icon-link:focus .socials-icon-svg {
+    fill: var(--main-title-cl);
+}
+
+.social-icon-link:hover,
+.social-icon-link:focus {
+    background-color: var(--link-cl);
 }
 
 .footer-bg {
@@ -358,3 +395,37 @@ button:focus {
     font-size: 16px;
     line-height: 1.87;
 }
+
+.client-icon-item:not(:last-child) {
+    margin-right: 30px;}
+
+    
+    
+
+.client-icon-svg {
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-svg-cl);
+}
+
+.client-icon-link{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 170px;
+     height: 92px;
+     border: 1px;
+     background-color:var(--main-title-cl);
+     border: 1px solid var(--icon-svg-cl);
+     border-radius: 4px;
+}
+
+.client-icon-link:hover .client-icon-svg,
+    .client-icon-link:focus .client-icon-svg {
+        fill: var(--link-cl);
+    }
+
+    .client-icon-link:hover,
+    .client-icon-link:focus {
+        border: 1px solid var(--link-cl);
+    }
