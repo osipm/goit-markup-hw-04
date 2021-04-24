@@ -226,6 +226,27 @@ img {
     text-align: left;
 }
 
+.feature-svg {
+    width: 270px;
+height: 120px;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px;
+background-color:var(--gray-bg);
+border-radius: 4px;
+margin-bottom: 30px;
+}
+
+.feature-icon-svg {
+    width: 65px;
+    height: 70px;
+    fill: var(--title-cl);
+    border-radius: 4px;
+
+
+}
+
 .work-item {
     flex-basis: calc((100% - 3 * 30px) / 3);
     background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
@@ -306,15 +327,13 @@ img {
     background-color: var(--blak-bg);
 }
 
-.footer {
+.footer-position {
     padding-top: 60px;
     padding-bottom: 60px;
-}
-
-.footer-position{
     display: inline-flex;
     display: flex;
-}
+     }
+
 
 .title-footer{
 font-size: 14px;
@@ -323,14 +342,14 @@ text-transform: uppercase;
 color: var(--main-title-cl);
 margin-bottom: 20px;
 text-align: left;
-
-pading-top: 11.5px;
 }
 
 
-.socials-foter{
+.socials-foter:not(:last-child){
     margin-right: 70px;
     }
+
+
 
 .Studio-cl {
     color: var(--main-title-cl)
