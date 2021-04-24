@@ -206,7 +206,6 @@ img {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--title-cl);
 }
 
@@ -311,6 +310,27 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.footer-position{
+    display: inline-flex;
+    display: flex;
+}
+
+.title-footer{
+font-size: 14px;
+line-height: 16px;
+text-transform: uppercase;
+color: var(--main-title-cl);
+margin-bottom: 20px;
+text-align: left;
+
+pading-top: 11.5px;
+}
+
+
+.socials-foter{
+    margin-right: 70px;
+    }
 
 .Studio-cl {
     color: var(--main-title-cl)
