@@ -29,6 +29,7 @@ html,
 
 
 body {
+    background-image: url(./imeges/fon.jpg);
     font-family: var(--main-text-cl);
     font-size: 14px;
     line-height: 1.71;
@@ -110,7 +111,7 @@ img {
     stroke: currentColor;
     fill: var(--mein-text-cl);
 }
-    
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -169,18 +170,19 @@ img {
 }
 
 .car {
-    background-image: url(./imeges/img.jpg);
+    background-image: url(../imeges/fon.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;}
+    background-size: cover;
+}
 
 .cap {
     width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-color: var(--blak-bg);
-   
+    background-color: rgba(47, 48, 58, 0.4);
+
 }
 
 .main-title {
@@ -315,7 +317,7 @@ img {
 .socials-icon-svg {
     width: 20px;
     height: 20px;
-    fill: var(--main-title-cl);
+    fill: var(--icon-svg-cl);
 }
 
 .social-icon-link {
@@ -325,8 +327,13 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    }
+    background-color: var(--main-title-cl);
+}
+
+.social-icon-link:hover .socials-icon-svg,
+.social-icon-link:focus .socials-icon-svg {
+    fill: var(--main-title-cl);
+}
 
 .social-icon-link:hover,
 .social-icon-link:focus {
@@ -344,6 +351,14 @@ img {
     display: flex;
 }
 
+.link-svg-cl {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.contakt-svg-cl {
+    fill: var(--main-title-cl);
+}
 
 .title-footer {
     font-size: 14px;
@@ -355,7 +370,7 @@ img {
 }
 
 
-.socials-foter:not(:last-child) {
+.contakt-foter:not(:last-child) {
     margin-right: 70px;
 }
 
@@ -407,8 +422,9 @@ img {
 
 .button:hover,
 button:focus {
-    color: var(--link-cl);
+    color: var(--main-title-cl);
     cursor: pointer;
+    background: var(--link-cl);
 }
 
 .section-filtr {
